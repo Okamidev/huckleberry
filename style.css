@@ -1,3 +1,15 @@
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-grey-very-dark: hsl(0deg, 0%, 10%);
+  --color-grey-dark: hsl(0deg, 0%, 30%);
+  --color-grey-medium: hsl(0deg, 0%, 40%);
+  --color-grey-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -9,4 +21,21 @@ body {
   padding: 0;
 }
 
-/* Add styles here! */
+strong {
+  color: var(--color-primary);
+}
+
+h2 {
+  background-color: var(--color-secondary-light);
+  border-bottom: 8px solid var(--color-secondary-dark);
+}
+
+main {
+  background-color: var(--color-grey-light);
+  border-top: 8px solid var(--color-grey-dark);
+}
+
+.card {
+  background-color: var(--color-white);
+  border-bottom: 8px solid var(--color-grey-dark);
+}
