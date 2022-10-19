@@ -34,7 +34,7 @@ h2 {
 
 .indented-heading {
   padding-inline-start: 24px;
-  margin: 0 0 0 -8px;
+  margin: 0 0 0 -24px;
 }
 
 header {
@@ -47,20 +47,17 @@ main {
   padding: 48px 0;
 }
 
-.intro-chunk, .card {
-  max-width: 630px;
-  margin: 0 auto;
-}
-
 .card {
-  padding-top: 8px;
   background-color: var(--color-white);
   border-bottom: 8px solid var(--color-grey-dark);
+  padding: 8px 16px;
+  margin: -16px;
 }
 
-h1, h2, p {
-  padding-inline-start: 16px;
-  padding-inline-end: 16px;
+.max-width-wrapper {
+  max-width: 630px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .intro-chunk > * {
