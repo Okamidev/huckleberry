@@ -28,14 +28,34 @@ strong {
 h2 {
   background-color: var(--color-secondary-light);
   border-bottom: 8px solid var(--color-secondary-dark);
+  width: fit-content;
+}
+
+header {
+  padding: 48px 0;
 }
 
 main {
   background-color: var(--color-grey-light);
   border-top: 8px solid var(--color-grey-dark);
+  padding: 48px 0;
+}
+
+.intro-chunk, .card {
+  max-width: 630px;
+  margin: 0 auto;
 }
 
 .card {
   background-color: var(--color-white);
   border-bottom: 8px solid var(--color-grey-dark);
+}
+
+.intro-chunk > *, .card > * {
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+}
+
+.intro-chunk > * {
+  max-width: 360px;
 }
